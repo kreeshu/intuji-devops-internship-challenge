@@ -1,0 +1,10 @@
+version: '3.8'
+
+services:
+  php-app:
+    image: krishukarki/php-hello-world:latest
+    container_name: php-hello-world
+    ports:
+      - "8080:80"
+    volumes:
+      - ./php-hello-world:/var/www/html
